@@ -1,22 +1,17 @@
 # Logistic Regression
-<p align="center">
-  <src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/06/485800-Heart-Disease-Facts-Statistics-and-You-1296x728-Header.png?h=1528">
-</p>
+![enter image description here](https://i0.wp.com/post.healthline.com/wp-content/uploads/2020/06/485800-Heart-Disease-Facts-Statistics-and-You-1296x728-Header.png?h=1528)
 
-In statistics and machine learning, ensemble methods use multiple learning algorithms to obtain better predictive performance than could be obtained from any of the constituent learning algorithms alone.
-
+In Machine Learning, Logistic Regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable.
 
 # Project Description
-
-In this project, four predictive machine learning models are applied to one dataset in order to select the model that returns the most accurate predictions. Different values for the hyperparameters *max_depth* and *n_estimators* were used in order to optimize model perforamnce by obtaining the highest accuracy and AUC scores. Lastly, the best-performing model was selected by comparing the scores when using common hyperparameters.
+This project employs a Logistic Regression model with the objective to predict the risk of Cardiovascular Disease based on 16 pateitn variables such as age, waist citcumference, and preexisting health conditions. First, a binary classification model is created and optimized to predict whether risks are present. Next, the coefficients of all variables are extracted and ordered by importance to understand which factors most influence the development of heart disease. Lastly, the model's performance is evaluated using measures including the Accuracy score, Precision, Recall, and AUC score.
 
 
 ## Steps
 
- 1. Splitting Data into Train and Test Sets
- 2. Fitting the Model
- 3. Calculating and Graphing Accuracy Scores
- 4. Comparing Performances
+ 1. Building and optimizing Logistic Regression model
+ 2. Extracting Features and their Influence
+ 3. Performance Evaluation
 
 ## Requirements
 
@@ -27,30 +22,29 @@ In this project, four predictive machine learning models are applied to one data
 - [Jupyter Notebook](https://jupyter.org/).
 
 ### Packages 
+
 Install the following packages in Python prior to running the code.
 ```python
-!pip install xgboost
-
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
-
-from sklearn.tree import DecisionTreeClassifier
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import LabelEncoder
-from sklearn.metrics import accuracy_score
-from sklearn.ensemble import AdaBoostClassifier
-from sklearn.ensemble import GradientBoostingClassifier
-from xgboost import XGBClassifier
-from sklearn.metrics import roc_auc_score
-
-drive.mount('/content/drive')
+from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import confusion_matrix, classification_report, roc_curve, roc_auc_score
+from sklearn.preprocessing import StandardScaler
+import seaborn as sns
+import matplotlib.pyplot as plt
 ```
-After importing ```drive.mount('/content/drive')```, follow instructions in the output to authorize access to Google Drive in order to obtain directories.
 
 ## Launch
-Download the Python File *CA04_Ensemble_Models* and open it in the IDE. Download and import the dataset *data.csv*. 
+Download the Python File *CA05-A_Logistic_Regression* and open it in the IDE. Download and import the dataset *cvd_data.csv*. 
 
 ## Authors
 
 [Silvia Ji](https://www.linkedin.com/in/silviaji/) - [GitHub](github.com/jisilvia)
+
+## License
+This project is licensed under the [MIT](https://choosealicense.com/licenses/mit/) License.
+
+## Acknowledgements
+
+The project template and dataset provided by [Arin Brahma](https://github.com/ArinB) at Loyola Marymount University.
