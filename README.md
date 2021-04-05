@@ -4,7 +4,7 @@
 In Machine Learning, Logistic Regression is a statistical model that in its basic form uses a logistic function to model a binary dependent variable. Unlike Linear Regression models which use continuous data, Logistic Regression models are able to use categorical datasets and explain the relationship between one dependent binary variable and one or more nominal, ordinal, interval or ratio-level independent variables.
 
 # Project Description
-This project employs a Logistic Regression model with the objective to predict the risk of Cardiovascular Disease based on 16 pateitn variables such as age, waist citcumference, and preexisting health conditions. First, a binary classification model is created and optimized to predict whether risks are present. Next, the coefficients of all variables are extracted and ordered by importance to understand which factors most influence the development of heart disease. Lastly, the model's performance is evaluated using measures including the Accuracy score, Precision, Recall, and AUC score.
+This project employs a Logistic Regression model with the objective to predict the risk of Cardiovascular Disease based on 16 variables such as age, waist citcumference, and preexisting health conditions. First, a binary classification model is created and optimized to predict whether risks are present. Next, the coefficients of all variables are extracted and ordered by importance to understand which factors most influence the development of heart disease. Lastly, the model's performance is evaluated using measures including the Accuracy score, Precision, Recall, and AUC score.
 
 
 ## Steps
